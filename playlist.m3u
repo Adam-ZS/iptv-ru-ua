@@ -76,7 +76,7 @@ http://31.148.48.15/Rossiya_1/index.m3u8
 #EXTINF:-1 tvg-name="Russia 24",Russia 24
 http://31.148.48.15/Rossiya_24/index.m3u8
 #EXTINF:-1 tvg-name="Россия-К",Россия-К
-http://ott-cdn.ucom.am/s16/index.m3u8
+http://31.148.48.15/Kultura/index.m3u8
 #EXTINF:-1 tvg-name="Русский Бестселлер",Русский Бестселлер
 http://31.148.48.15/Russkiy_Bestseller/index.m3u8
 #EXTINF:-1 tvg-name="Рыжий (480p)",Рыжий (480p)
@@ -126,7 +126,7 @@ http://185.236.229.62:9981/play/a07r
 #EXTINF:-1 tvg-name="IHTEP",IHTEP
 https://cdn15.live-tv.cloud/ua_infinitas_tv/inter-abr/playlist.m3u8
 #EXTINF:-1 tvg-name="Inter+",Inter+
-http://62.233.57.226:8001/play/a00q
+https://cdn15.live-tv.cloud/ua_infinitas_tv/inter-abr/playlist.m3u8
 #EXTINF:-1 tvg-name="К1 (576p)",К1 (576p)
 http://edge3.iptv.macc.com.ua/life/k1.m3u8
 #EXTINF:-1 tvg-name="НТН (576p)",НТН (576p)
