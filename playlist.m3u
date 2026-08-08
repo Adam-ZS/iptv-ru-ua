@@ -4,7 +4,7 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8
 #EXTINF:-1 tvg-name="ORT",ORT
 http://31.148.48.15/Pervii_kanal_HD/index.m3u8
 #EXTINF:-1 tvg-id="ChannelOne.ru@SD" tvg-name="Первый канал" tvg-logo="https://i.imgur.com/RUSX0rX.png",Первый канал
-https://streaming.televizor-24-tochka.ru/live/210.m3u8
+https://cdn.ntv.ru/vitrina18/index.m3u8
 #EXTINF:-1 tvg-id="360.ru@SD" tvg-name="360°" tvg-logo="https://i.imgur.com/VTJqdoX.png",360°
 https://live-vgtrksmotrim.cdnvideo.ru/vgtrksmotrim/smotrim-live-04-srt.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Первый",Первый
@@ -32,7 +32,7 @@ https://live-tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8
 #EXTINF:-1 tvg-id="NikaTV.ru@SD" tvg-name="Ника ТВ (576p)" tvg-logo="https://i.imgur.com/dccsFAu.png",Ника ТВ (576p)
 https://live-nikatv.cdnvideo.ru/nikatv/nikatv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-name="НТВ",НТВ
-http://31.148.48.15/NTV/index.m3u8
+https://cdn.ntv.ru/ntv0_hd/index.m3u8
 #EXTINF:-1 tvg-name="НТВ Мир",НТВ Мир
 https://streaming.televizor-24-tochka.ru/live/213.m3u8
 #EXTINF:-1 tvg-name="НТВ Mir",НТВ Mir
@@ -40,7 +40,7 @@ http://31.148.48.15/NTV/index.m3u8
 #EXTINF:-1 tvg-id="YaPervyy.ru@HD" tvg-name="Первый Ярославский" tvg-logo="https://yarreg.ru/gallery/news/2025/03/293241/3.jpeg",Первый Ярославский
 https://yaroslavl.mediacdn.ru/cdn/pervyaroslavsk/playlist.m3u8
 #EXTINF:-1 tvg-id="Russia1.ru@SD" tvg-name="Россия 1" tvg-logo="https://i.imgur.com/Osd2JHL.png",Россия 1
-http://31.148.48.15/Rossiya_1/index.m3u8
+https://live.smotrim.ru/vgtrk/0/russia1-hd/index.m3u8
 #EXTINF:-1 tvg-name="Россия 1 HD",Россия 1 HD
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8
 #EXTINF:-1 tvg-name="Россия 11",Россия 11

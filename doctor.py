@@ -29,6 +29,7 @@ IPG_UA = "https://iptv-org.github.io/iptv/countries/ua.m3u"
 REFERERS = {
     "31.148.48.15": "http://31.148.48.15/",
     "cdn.ntv.ru": "https://www.ntv.ru/",
+    "live.smotrim.ru": "https://smotrim.ru/",
     "vnet.am": "https://www.vnet.am/",
     "bonus-tv.ru": "https://bonus-tv.ru/",
     "macc.com.ua": "http://macc.com.ua/",
@@ -97,10 +98,12 @@ SLOTS = {
 # verified-winner reservoir (probed ALIVE from the user's IP on 2026-08-08)
 RESERVOIR = {
     "Первый канал": [
+        "https://cdn.ntv.ru/vitrina18/index.m3u8",
         "http://31.148.48.15/Pervii_kanal_HD/index.m3u8",
         "https://streaming.televizor-24-tochka.ru/live/210.m3u8",
     ],
     "Россия 1": [
+        "https://live.smotrim.ru/vgtrk/0/russia1-hd/index.m3u8",
         "http://31.148.48.15/Rossiya_1/index.m3u8",
         "https://live.chechensoft.ru/vainahtv/ngrp:vaynahtv_all/playlist.m3u8",
     ],
@@ -109,6 +112,7 @@ RESERVOIR = {
         "https://vgtrkregion-reg.cdnvideo.ru/vgtrk/habarovsk/russia24-sd/index.m3u8",
     ],
     "НТВ": [
+        "https://cdn.ntv.ru/ntv0_hd/index.m3u8",
         "http://31.148.48.15/NTV/index.m3u8",
         "https://cdn.ntv.ru/ntv1/playlist.m3u8",
         "https://cdn.ntv.ru/ntv2/playlist.m3u8",
