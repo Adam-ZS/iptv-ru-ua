@@ -1,9 +1,8 @@
 {
- "summary": "doctor run 2026-08-08 18:45 — 51/52 channels kept (removed 1)",
+ "summary": "doctor run 2026-08-08 18:47 — 52/52 channels kept (removed 0)",
  "report": [
   "LEAVE  : Inter (unsupported/skip) — no slot (yt/unsupported)",
   "LEAVE  : FREEDOM (unsupported/skip) — no slot (yt/unsupported)",
-  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)",
-  "REMOVE : НТВ (офиц) — no working source (http200)"
+  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)"
  ]
 }

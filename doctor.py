@@ -154,14 +154,18 @@ RESERVOIR = {
 }
 
 def fetch_url(url, max_bytes=65536, ua=UA):
-    hdrs = {"User-Agent": ua}
+    hdrs = {"User-Agent": ua, "Accept-Encoding": "identity"}
     for host, ref in REFERERS.items():
         if host in url:
             hdrs["Referer"] = ref
             break
     req = urllib.request.Request(url, headers=hdrs)
     with urllib.request.urlopen(req, timeout=TIMEOUT, context=CTX) as r:
-        return r.status, r.read(max_bytes)
+        body = r.read(max_bytes)
+        if body[:2] == b"\x1f\x8b":
+            import gzip
+            body = gzip.decompress(body)
+        return r.status, body
 
 def probe_url(url):
     url = url.strip()
@@ -171,19 +175,28 @@ def probe_url(url):
     m = re.search(r"[?&]e=(\d+)", url)
     if m and int(m.group(1)) < time.time():
         return False, "expired-token"
-    try:
-        code, body = fetch_url(url)
-        if code != 200 or b"#EXT" not in body:
-            return False, f"http{code}"
-        seg = next((urljoin(url, l.strip()) for l in body.decode("utf-8", "ignore").splitlines()
-                    if l.strip() and not l.strip().startswith("#")), None)
-        if seg:
-            scode, sbody = fetch_url(seg, 4096)
-            if scode != 200 or len(sbody) < 100:
-                return False, f"http{code}/seg"
-        return True, ""
-    except Exception as e:
-        return False, type(e).__name__
+    for attempt in (0, 1):  # single retry — transient CDN flakes are common
+        try:
+            code, body = fetch_url(url)
+            if code != 200 or b"#EXT" not in body:
+                if attempt == 0:
+                    continue
+                return False, f"http{code}"
+            seg = next((urljoin(url, l.strip()) for l in body.decode("utf-8", "ignore").splitlines()
+                        if l.strip() and not l.strip().startswith("#")), None)
+            if seg:
+                scode, sbody = fetch_url(seg, 4096)
+                if scode != 200 or len(sbody) < 100:
+                    if attempt == 0:
+                        continue
+                    return False, f"http{code}/seg"
+            return True, ""
+        except Exception as e:
+            if attempt == 0:
+                time.sleep(1)
+                continue
+            return False, type(e).__name__
+    return False, "unreachable"
 
 def parse_m3u(path):
     chans, cur = [], None
