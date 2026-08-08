@@ -238,6 +238,7 @@ def main():
     # phase 3: runtime discovery via iptv-org (only for still-broken slots)
     if still_broken:
         print(f"[*] runtime discovery for {len(still_broken)} slots...")
+        os.makedirs("sources", exist_ok=True)
         for f, u in (("ru.m3u", IPG_RU), ("ua.m3u", IPG_UA)):
             try:
                 req = urllib.request.Request(u, headers={"User-Agent": UA})
