@@ -43,7 +43,7 @@ SLOT_OF = {
     "Россия 1 (офиц)": "Россия 1",
     "Russia 24": "Россия 24",
     "НТВ": "НТВ", "НТВ Mir": "НТВ", "НТВ Мир": "НТВ Мир",
-    "НТВ (офиц)": "НТВ",
+    "НТВ (офиц)": "НТВ", "НТВ Мир (офиц)": "НТВ Мир",
     "НТВ Сериал": "НТВ Сериал", "НТВ Стиль": "НТВ Стиль",
     "СТС": "СТС", "СТС Kids": "СТС Kids", "СТС Love": "СТС Love",
     "ТНТ": "ТНТ", "ТНТ4 (480p)": "ТНТ4", "ТНТ MUSIC": "ТНТ MUSIC",
@@ -120,7 +120,10 @@ RESERVOIR = {
         "https://cdn.ntv.ru/ntv1/playlist.m3u8",
         "https://cdn.ntv.ru/ntv2/playlist.m3u8",
     ],
-    "НТВ Мир": ["https://streaming.televizor-24-tochka.ru/live/213.m3u8"],
+    "НТВ Мир": [
+        "https://cdn.ntv.ru/vitrina3/index.m3u8",
+        "https://streaming.televizor-24-tochka.ru/live/213.m3u8",
+    ],
     "НТВ Сериал": ["https://cdn.ntv.ru/th_serial/playlist.m3u8"],
     "НТВ Стиль": ["https://cdn.ntv.ru/th_hit/playlist.m3u8"],
     "СТС": [
