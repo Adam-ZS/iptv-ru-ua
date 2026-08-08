@@ -3,6 +3,7 @@
 **Self-healing Russian & Ukrainian IPTV playlist** — live M3U for SS IPTV (LG webOS) and any HLS player, kept alive automatically, no maintenance, no laptop required.
 
 [![Playlist Doctor](https://github.com/Adam-ZS/iptv-ru-ua/actions/workflows/doctor.yml/badge.svg)](https://github.com/Adam-ZS/iptv-ru-ua/actions/workflows/doctor.yml)
+[![Channels](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FAdam-ZS%2Fiptv-ru-ua%2Fmain%2Fstatus.json&style=flat)](https://github.com/Adam-ZS/iptv-ru-ua/blob/main/playlist.m3u)
 ![Last commit](https://img.shields.io/github/last-commit/Adam-ZS/iptv-ru-ua)
 ![Repo size](https://img.shields.io/github/repo-size/Adam-ZS/iptv-ru-ua)
 ![License](https://img.shields.io/github/license/Adam-ZS/iptv-ru-ua)
@@ -28,7 +29,11 @@ Free RU/UA playlists rot. Links die by the dozen every month:
 
 It runs on **GitHub Actions 4× a day** (03:17 / 09:17 / 15:17 / 21:17 UTC) — always on, free, no server of yours involved.
 
-Channel titles are **stable**: the naming and order never shuffle; only the URL behind each name is replaced when needed.
+Channel titles are **stable**: the naming and order never shuffle; only the URL behind each name is replaced when needed. Rich metadata is stamped on every entry too — `tvg-id` + `tvg-logo` from [iptv-org](https://github.com/iptv-org/iptv) — so players that support logos show real channel artwork.
+
+## TV Guide (EPG)?
+
+Tried — honestly. The free public RU/UA XMLTV landscape is dead as of mid-2026 (iptv-org's own EPG generator is self-host-only; epgshare domains are gone). No reliable public RU/UA guide feed exists right now. If you have a working XMLTV URL for Russian/Ukrainian channels, open an issue — the playlist's `tvg-id`s are already in place so a guide plugs straight in.
 
 ## Quick start
 
