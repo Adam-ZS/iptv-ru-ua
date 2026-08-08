@@ -1,0 +1,25 @@
+name: playlist-doctor
+on:
+  schedule:
+    # 3/9/15/21 UTC :17 — offset from local cron (0/6/12/18 :22) so they never collide
+    - cron: "17 3,9,15,21 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  doctor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: configure git for the doctor's own commit+push
+        run: |
+          git config user.name "playlist-doctor"
+          git config user.email "doctor@iptv-ru-ua.invalid"
+          git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+      - name: run doctor (probe, heal, commit, push)
+        run: python3 doctor.py
