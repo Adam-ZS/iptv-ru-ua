@@ -1,4 +1,4 @@
-# mom-iptv
+# iptv-ru-ua
 
 Self-healing RU/UA playlist for SS IPTV (LG webOS).
 
