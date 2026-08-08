@@ -3,9 +3,9 @@
 https://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8
 #EXTINF:-1 tvg-name="ORT",ORT
 http://31.148.48.15/Pervii_kanal_HD/index.m3u8
-#EXTINF:-1 tvg-name="Первый канал",Первый канал
+#EXTINF:-1 tvg-id="ChannelOne.ru@SD" tvg-name="Первый канал" tvg-logo="https://i.imgur.com/RUSX0rX.png",Первый канал
 https://streaming.televizor-24-tochka.ru/live/210.m3u8
-#EXTINF:-1 tvg-name="360°",360°
+#EXTINF:-1 tvg-id="360.ru@SD" tvg-name="360°" tvg-logo="https://i.imgur.com/VTJqdoX.png",360°
 https://live-vgtrksmotrim.cdnvideo.ru/vgtrksmotrim/smotrim-live-04-srt.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Первый",Первый
 http://31.148.48.15/Pervii_kanal_HD/index.m3u8
@@ -13,35 +13,33 @@ http://31.148.48.15/Pervii_kanal_HD/index.m3u8
 https://rt-doc.rttv.com/dvr/rtdru/playlist.m3u8
 #EXTINF:-1 tvg-name="RU TV",RU TV
 http://31.148.48.15/RU_TV/index.m3u8
-#EXTINF:-1 tvg-name="Shopping Live (576p)",Shopping Live (576p)
+#EXTINF:-1 tvg-id="ShoppingLive.ru@SD" tvg-name="Shopping Live (576p)" tvg-logo="https://i.imgur.com/EMmGnjV.png",Shopping Live (576p)
 http://serv30.vintera.tv:8081/shoppinglive/shoppinglive_stream/playlist.m3u8
-#EXTINF:-1 tvg-name="Арис 24 (720p)",Арис 24 (720p)
+#EXTINF:-1 tvg-id="Aris24.ru@SD" tvg-name="Арис 24 (720p)" tvg-logo="https://i.imgur.com/CTFVEAb.png",Арис 24 (720p)
 http://serv25.vintera.tv:8081/test/aris/playlist.m3u8
-#EXTINF:-1 tvg-name="Мир 24 (1080p)",Мир 24 (1080p)
+#EXTINF:-1 tvg-id="Mir24.ru@SD" tvg-name="Мир 24 (1080p)" tvg-logo="https://i.imgur.com/dj9c8Yd.png",Мир 24 (1080p)
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8
-#EXTINF:-1 tvg-name="Мир (1080p)",Мир (1080p)
+#EXTINF:-1 tvg-id="Mir.ru@Plus4" tvg-name="Мир (1080p)" tvg-logo="https://i.imgur.com/AqWaJT8.png",Мир (1080p)
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8
-#EXTINF:-1 tvg-name="МТВ (Волгоград) (720p)",МТВ (Волгоград) (720p)
+#EXTINF:-1 tvg-id="MTVVolgograd.ru@SD" tvg-name="МТВ (Волгоград) (720p)" tvg-logo="https://i.imgur.com/pdCAUrP.png",МТВ (Волгоград) (720p)
 http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="Муз союз (576p)",Муз союз (576p)
+#EXTINF:-1 tvg-id="MuzSoyuz.ru@SD" tvg-name="Муз союз (576p)" tvg-logo="https://i.imgur.com/Puk1Bhx.png",Муз союз (576p)
 https://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
-#EXTINF:-1 tvg-name="Мульт",Мульт
+#EXTINF:-1 tvg-id="Mult.ru@SD" tvg-name="Мульт" tvg-logo="https://i.imgur.com/xi351Fx.png",Мульт
 http://31.148.48.15/Mult_HD/index.m3u8
-#EXTINF:-1 tvg-name="Надежда (720p)",Надежда (720p)
+#EXTINF:-1 tvg-id="HopeChannelRussia.ru@SD" tvg-name="Надежда (720p)" tvg-logo="https://i.imgur.com/ah6VnFJ.png",Надежда (720p)
 https://live-tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8
-#EXTINF:-1 tvg-name="Ника ТВ (576p)",Ника ТВ (576p)
+#EXTINF:-1 tvg-id="NikaTV.ru@SD" tvg-name="Ника ТВ (576p)" tvg-logo="https://i.imgur.com/dccsFAu.png",Ника ТВ (576p)
 https://live-nikatv.cdnvideo.ru/nikatv/nikatv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-name="НТВ",НТВ
 http://31.148.48.15/NTV/index.m3u8
 #EXTINF:-1 tvg-name="НТВ Мир",НТВ Мир
 https://streaming.televizor-24-tochka.ru/live/213.m3u8
-#EXTINF:-1 tvg-name="НТВ Сериал",НТВ Сериал
-https://cdn.ntv.ru/th_serial/playlist.m3u8
 #EXTINF:-1 tvg-name="НТВ Mir",НТВ Mir
 http://31.148.48.15/NTV/index.m3u8
-#EXTINF:-1 tvg-name="Первый Ярославский",Первый Ярославский
+#EXTINF:-1 tvg-id="YaPervyy.ru@HD" tvg-name="Первый Ярославский" tvg-logo="https://yarreg.ru/gallery/news/2025/03/293241/3.jpeg",Первый Ярославский
 https://yaroslavl.mediacdn.ru/cdn/pervyaroslavsk/playlist.m3u8
-#EXTINF:-1 tvg-name="Россия 1",Россия 1
+#EXTINF:-1 tvg-id="Russia1.ru@SD" tvg-name="Россия 1" tvg-logo="https://i.imgur.com/Osd2JHL.png",Россия 1
 http://31.148.48.15/Rossiya_1/index.m3u8
 #EXTINF:-1 tvg-name="Россия 1 HD",Россия 1 HD
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8
@@ -53,11 +51,11 @@ http://31.148.48.15/Rossiya_24/index.m3u8
 http://31.148.48.15/Kultura/index.m3u8
 #EXTINF:-1 tvg-name="Русский Бестселлер",Русский Бестселлер
 http://31.148.48.15/Russkiy_Bestseller/index.m3u8
-#EXTINF:-1 tvg-name="С1 (Сургут) (1080p)",С1 (Сургут) (1080p)
+#EXTINF:-1 tvg-id="S1.ru@SD" tvg-name="С1 (Сургут) (1080p)" tvg-logo="https://i.imgur.com/chNBF5t.png",С1 (Сургут) (1080p)
 https://sitv.ru/hls/stv.m3u8
-#EXTINF:-1 tvg-name="Салям (Уфа) (576p)",Салям (Уфа) (576p)
+#EXTINF:-1 tvg-id="Salyam.ru@SD" tvg-name="Салям (Уфа) (576p)" tvg-logo="https://i.imgur.com/FfULLr1.png",Салям (Уфа) (576p)
 https://bsttv.bonus-tv.ru/cdn/salyam/playlist.m3u8
-#EXTINF:-1 tvg-name="Самара 24",Самара 24
+#EXTINF:-1 tvg-id="Samara24.ru@SD" tvg-name="Самара 24" tvg-logo="https://i.imgur.com/YUe3Dwd.png",Самара 24
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/samara/samara24-hd/index.m3u8
 #EXTINF:-1 tvg-name="СТС",СТС
 https://zabava-htlive.cdn.ngenix.net/hls/CH_STS/variant.m3u8
@@ -65,7 +63,7 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_STS/variant.m3u8
 http://31.148.48.15/STS_Love/index.m3u8
 #EXTINF:-1 tvg-name="Суббота! (450p)",Суббота! (450p)
 https://zabava-htlive.cdn.ngenix.net/hls/CH_SUPER/variant.m3u8
-#EXTINF:-1 tvg-name="Тамыр (Уфа) (576p)",Тамыр (Уфа) (576p)
+#EXTINF:-1 tvg-id="Tamyr.ru@SD" tvg-name="Тамыр (Уфа) (576p)" tvg-logo="https://i.imgur.com/Ia3acCB.png",Тамыр (Уфа) (576p)
 https://bsttv.bonus-tv.ru/cdn/tamyr/playlist.m3u8
 #EXTINF:-1 tvg-name="ТВ3",ТВ3
 http://s18209.cdn.ngenix.net/hls/CH_R01_TV3/playlist.m3u8
@@ -73,15 +71,15 @@ http://s18209.cdn.ngenix.net/hls/CH_R01_TV3/playlist.m3u8
 http://s18209.cdn.ngenix.net/hls/CH_R04_TVC/playlist.m3u8
 #EXTINF:-1 tvg-name="ТНТ",ТНТ
 http://s18209.cdn.ngenix.net/hls/CH_R01_TNT/playlist.m3u8
-#EXTINF:-1 tvg-name="ТНТ4 (480p)",ТНТ4 (480p)
+#EXTINF:-1 tvg-id="TNT4.ru@SD" tvg-name="ТНТ4 (480p)" tvg-logo="https://i.imgur.com/gBokU5i.png",ТНТ4 (480p)
 http://31.148.48.15/TNT4/index.m3u8
-#EXTINF:-1 tvg-name="Точка ТВ",Точка ТВ
+#EXTINF:-1 tvg-id="TochkaTV.ru@SD" tvg-name="Точка ТВ" tvg-logo="https://i.imgur.com/yyNR5jG.png",Точка ТВ
 http://31.148.48.15/Tochka_TV/index.m3u8
-#EXTINF:-1 tvg-name="Три Ангела",Три Ангела
+#EXTINF:-1 tvg-id="3ABNRussia.ru@SD" tvg-name="Три Ангела" tvg-logo="https://i.imgur.com/4fhBbam.png",Три Ангела
 https://3abn.bozztv.com/3abn2/Rus_live/smil:Rus_live.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="IHTEP",IHTEP
 https://cdn15.live-tv.cloud/ua_infinitas_tv/inter-abr/playlist.m3u8
-#EXTINF:-1 tvg-name="Inter+",Inter+
+#EXTINF:-1 tvg-id="InterPlus.ua@SD" tvg-name="Inter+" tvg-logo="https://i.imgur.com/Y392Hh4.png",Inter+
 https://cdn15.live-tv.cloud/ua_infinitas_tv/inter-abr/playlist.m3u8
 #EXTINF:-1 tvg-name="НТН (576p)",НТН (576p)
 https://cdn15.live-tv.cloud/ua_infinitas_tv/ntn-abr/playlist.m3u8
@@ -91,11 +89,11 @@ https://dash2.antik.sk/live/1plus1_marathon/playlist.m3u8
 https://dash2.antik.sk/live/1plus1_marathon/playlist.m3u8
 #EXTINF:-1 tvg-name="Inter",Inter
 https://www.youtube.com/watch?v=emvZnAd4Qcw
-#EXTINF:-1 tvg-name="FREEDOM",FREEDOM
+#EXTINF:-1 tvg-id="FREEDOM.ua@SD" tvg-name="FREEDOM" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/FreeDOMUAlogo.svg/960px-FreeDOMUAlogo.svg.png",FREEDOM
 https://youtu.be/emvZnAd4Qcw
-#EXTINF:-1 tvg-name="24 канал",24 канал
+#EXTINF:-1 tvg-id="Channel24.ua@SD" tvg-name="24 канал" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/24_Group_Ukraine_04.png/960px-24_Group_Ukraine_04.png",24 канал
 https://cdn15.live-tv.cloud/ua_infinitas_tv/news24-abr/playlist.m3u8
-#EXTINF:-1 tvg-name="100% News",100% News
+#EXTINF:-1 tvg-id="100NEWS.ua@SD" tvg-name="100% News" tvg-logo="https://i.imgur.com/bSXKdK5.png",100% News
 http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8
 #EXTINF:-1 tvg-name="MOSCOW",MOSCOW
 https://ok.ru/video/216342154

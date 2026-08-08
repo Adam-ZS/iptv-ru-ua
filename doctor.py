@@ -183,15 +183,56 @@ def parse_m3u(path):
     for line in open(path, encoding="utf-8", errors="ignore"):
         line = line.strip()
         if line.startswith("#EXTINF"):
-            m = re.search(r'tvg-name="([^"]*)"', line)
-            title = m.group(1) if m else line.split(",", 1)[-1]
-            cur = {"title": title, "url": None}
+            m = re.search(r'tvg-id="([^"]*)"', line)
+            tid = m.group(1) if m else ""
+            mlogo = re.search(r'tvg-logo="([^"]*)"', line)
+            logo = mlogo.group(1) if mlogo else ""
+            mua = re.search(r'http-user-agent="([^"]*)"', line)
+            cua = mua.group(1) if mua else None
+            title = line.split(",", 1)[-1]
+            cur = {"id": tid, "logo": logo, "title": title, "url": None, "ua": cua}
         elif line and not line.startswith("#") and cur:
             cur["url"] = line
             chans.append(cur); cur = None
     return chans
 
+def normalize(title):
+    """Strip quality suffixes/brackets for name matching: 'Мир 24 (1080p)' -> 'мир 24'"""
+    t = re.sub(r"\[[^\]]*\]", "", title)
+    t = re.sub(r"\([^)]*\)", "", t)
+    t = t.replace("_", " ").strip().lower()
+    t = re.sub(r"\s+", " ", t)
+    return t
+
+def ensure_pool():
+    """(Re)fetch iptv-org country pools so enrichment always has ids/logos."""
+    os.makedirs("sources", exist_ok=True)
+    for f, u in (("ru.m3u", IPG_RU), ("ua.m3u", IPG_UA)):
+        try:
+            req = urllib.request.Request(u, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=TIMEOUT, context=CTX) as r:
+                open(os.path.join("sources", f), "wb").write(r.read())
+        except Exception:
+            pass
+
+def enrich(chans):
+    """Attach tvg-id + tvg-logo to channels using the last iptv-org pools (id/logo live there)."""
+    pool = parse_m3u("sources/ru.m3u") + parse_m3u("sources/ua.m3u")
+    by_norm = {}
+    for p in pool:
+        by_norm.setdefault(normalize(p["title"]), []).append(p)
+    for c in chans:
+        n = normalize(c["title"])
+        hits = by_norm.get(n) or []
+        cand = next((p for p in hits if p["id"] and p["logo"]), None) or (hits[0] if hits else None)
+        if cand:
+            c["tvg_id"] = cand["id"]
+            c["tvg_logo"] = cand["logo"]
+        else:
+            c["tvg_id"], c["tvg_logo"] = "", ""
+
 def main():
+    ensure_pool()
     chans = parse_m3u("playlist.m3u")
     report = []
 
@@ -282,10 +323,24 @@ def main():
             dropped.append(c)
             report.append(f"REMOVE : {c['title']} — no working source ({why})")
     chans = kept
+    enrich(chans)  # tvg-id + tvg-logo from the iptv-org pools
     with open("playlist.m3u", "w", encoding="utf-8") as fh:
         fh.write("#EXTM3U\n")
         for c in chans:
-            fh.write(f'#EXTINF:-1 tvg-name="{c["title"]}",{c["title"]}\n{c["url"]}\n')
+            attrs = f'tvg-name="{c["title"]}"'
+            if c.get("tvg_id"):
+                attrs = f'tvg-id="{c["tvg_id"]}" ' + attrs
+            if c.get("tvg_logo"):
+                attrs += f' tvg-logo="{c["tvg_logo"]}"'
+            fh.write(f"#EXTINF:-1 {attrs},{c['title']}\n{c['url']}\n")
+
+    # live status for the README badge (public)
+    alive_now = sum(1 for c in chans if final[id(c)][0])
+    ratio = alive_now / max(len(chans), 1)
+    color = "brightgreen" if ratio >= 0.9 else ("yellow" if ratio >= 0.7 else "red")
+    json.dump({"schemaVersion": 1, "label": "channels",
+               "message": f"{alive_now}/{len(chans)} alive",
+               "color": color}, open("status.json", "w"))
 
     summary = (f"doctor run {time.strftime('%Y-%m-%d %H:%M')} — "
                f"{len(kept)}/{len(chans)+len(dropped)} channels kept (removed {len(dropped)})")
