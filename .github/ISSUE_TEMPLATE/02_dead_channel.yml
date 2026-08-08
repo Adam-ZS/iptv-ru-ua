@@ -1,0 +1,46 @@
+name: Dead channel / suggestion
+description: Report a channel that's broken, or suggest a replacement source.
+title: "[CHANNEL] — <channel name>"
+labels: [channel]
+body:
+  - type: input
+    id: channel
+    attributes:
+      label: Channel name
+      description: Exact title as it appears in the playlist.
+      placeholder: "Россия 1"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens?
+      description: Blank screen? Error code? Buffer forever?
+      placeholder: "Playback stops right away or never starts"
+  - type: input
+    id: region
+    attributes:
+      label: Region you're testing from
+      description: Geo matters — a source can work in Moscow and not Damascus (or the reverse).
+      placeholder: "UAE"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Replacement URL (if you have one)
+      description: "Must be a public HLS stream, not a paid rip. Tokens like ?e= expire — don't submit them."
+      placeholder: "https://..."
+  - type: textarea
+    id: proof
+    attributes:
+      label: Proof the replacement works
+      description: "Run this and paste the output: curl -s -m 8 -o /dev/null -w '%{http_code}' '$URL'  → must be 200"
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: "I checked the latest doctor run — this channel may be scheduled for repair already"
+        - label: "My replacement URL contains no expiring token"
+        - label: "I tested outside the source country"

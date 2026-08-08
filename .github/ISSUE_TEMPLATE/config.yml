@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Dead channel or channel suggestion
+    url: https://github.com/Adam-ZS/iptv-ru-ua/issues/new?template=02_dead_channel.yml
+    about: Report a channel that died, or propose a verified replacement source.
+  - name: Security issue
+    url: https://github.com/Adam-ZS/iptv-ru-ua/security/advisories/new
+    about: Report a vulnerability privately — do NOT file a public issue.

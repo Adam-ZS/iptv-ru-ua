@@ -264,17 +264,31 @@ def main():
             else:
                 report.append(f"STILL DEAD: {title} ({slot}) — no source found this run")
 
-    # final probe + write
+    # final probe + prune: keep only the working + the yt-family (app-playable)
     with ThreadPoolExecutor(max_workers=20) as ex:
         futs = {ex.submit(probe_url, c["url"]): c for c in chans}
         final = {id(futs[f]): f.result() for f in as_completed(futs)}
-    alive_fin = sum(1 for v in final.values() if v[0])
+
+    def keepable(url):
+        low = url.lower()
+        return "youtube.com" in low or "youtu.be" in low or "ok.ru" in low
+
+    kept, dropped = [], []
+    for c in chans:
+        ok, why = final[id(c)]
+        if ok or keepable(c["url"]):
+            kept.append(c)
+        else:
+            dropped.append(c)
+            report.append(f"REMOVE : {c['title']} — no working source ({why})")
+    chans = kept
     with open("playlist.m3u", "w", encoding="utf-8") as fh:
         fh.write("#EXTM3U\n")
         for c in chans:
             fh.write(f'#EXTINF:-1 tvg-name="{c["title"]}",{c["title"]}\n{c["url"]}\n')
 
-    summary = f"doctor run {time.strftime('%Y-%m-%d %H:%M')} — baseline {alive_n}/{len(chans)} alive -> final {alive_fin}/{len(chans)} alive"
+    summary = (f"doctor run {time.strftime('%Y-%m-%d %H:%M')} — "
+               f"{len(kept)}/{len(chans)+len(dropped)} channels kept (removed {len(dropped)})")
     print(f"[=] {summary}")
     for line in report:
         print("     " + line)

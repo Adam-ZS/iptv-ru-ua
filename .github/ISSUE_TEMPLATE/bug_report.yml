@@ -1,0 +1,33 @@
+name: Bug report
+description: Something in the tooling broke (doctor, workflow, playlist generation).
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: What broke?
+      options:
+        - GitHub Actions workflow
+        - doctor.py (probing / swapping logic)
+        - playlist generation / ordering
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the bug — steps, expected vs actual.
+    validations:
+      required: true
+  - type: input
+    id: run
+    attributes:
+      label: Workflow run (if Actions)
+      description: Link to the failing run, or run ID.
+      placeholder: "https://github.com/Adam-ZS/iptv-ru-ua/actions/runs/..."
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs / output
+      render: shell
