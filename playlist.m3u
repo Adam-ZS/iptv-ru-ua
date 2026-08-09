@@ -85,10 +85,6 @@ http://31.148.48.15/TNT4/index.m3u8
 http://31.148.48.15/Tochka_TV/index.m3u8
 #EXTINF:-1 tvg-id="3ABNRussia.ru@SD" tvg-name="Три Ангела" tvg-logo="https://i.imgur.com/4fhBbam.png",Три Ангела
 https://3abn.bozztv.com/3abn2/Rus_live/smil:Rus_live.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="IHTEP",IHTEP
-https://cdn15.live-tv.cloud/ua_infinitas_tv/inter-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="InterPlus.ua@SD" tvg-name="Inter+" tvg-logo="https://i.imgur.com/Y392Hh4.png",Inter+
-https://cdn15.live-tv.cloud/ua_infinitas_tv/inter-abr/playlist.m3u8
 #EXTINF:-1 tvg-name="НТН (576p)",НТН (576p)
 https://cdn15.live-tv.cloud/ua_infinitas_tv/ntn-abr/playlist.m3u8
 #EXTINF:-1 tvg-name="1+1 Maraphon",1+1 Maraphon
