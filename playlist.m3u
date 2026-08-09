@@ -101,7 +101,5 @@ https://www.youtube.com/watch?v=emvZnAd4Qcw
 https://youtu.be/emvZnAd4Qcw
 #EXTINF:-1 tvg-id="Channel24.ua@SD" tvg-name="24 канал" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/24_Group_Ukraine_04.png/960px-24_Group_Ukraine_04.png",24 канал
 https://cdn15.live-tv.cloud/ua_infinitas_tv/news24-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="100NEWS.ua@SD" tvg-name="100% News" tvg-logo="https://i.imgur.com/bSXKdK5.png",100% News
-http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8
 #EXTINF:-1 tvg-name="MOSCOW",MOSCOW
 https://ok.ru/video/216342154
