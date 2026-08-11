@@ -1,29 +1,8 @@
 {
- "summary": "doctor run 2026-08-11 10:11 — 43/50 channels kept (removed 7)",
+ "summary": "doctor run 2026-08-11 16:10 — 43/43 channels kept (removed 0)",
  "report": [
-  "SWAP   : ORT  ->  https://cdn.ntv.ru/vitrina18/index.m3u8",
-  "SWAP   : Первый  ->  https://cdn.ntv.ru/vitrina18/index.m3u8",
-  "SWAP   : НТВ  ->  https://cdn.ntv.ru/ntv0_hd/index.m3u8",
-  "SWAP   : НТВ Mir  ->  https://cdn.ntv.ru/ntv0_hd/index.m3u8",
-  "SWAP   : Россия 1  ->  https://live.smotrim.ru/vgtrk/0/russia1-hd/index.m3u8",
-  "SWAP   : Россия 11  ->  https://live.smotrim.ru/vgtrk/0/russia1-hd/index.m3u8",
-  "SWAP   : Russia 24  ->  https://vgtrkregion-reg.cdnvideo.ru/vgtrk/habarovsk/russia24-sd/index.m3u8",
   "LEAVE  : Inter (unsupported/skip) — no slot (yt/unsupported)",
   "LEAVE  : FREEDOM (unsupported/skip) — no slot (yt/unsupported)",
-  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)",
-  "STILL DEAD: RU TV (RU TV) — no source found this run",
-  "STILL DEAD: Мульт (Мульт) — no source found this run",
-  "STILL DEAD: Россия-К (Россия К) — no source found this run",
-  "STILL DEAD: Русский Бестселлер (Русский Бестселлер) — no source found this run",
-  "STILL DEAD: СТС Love (СТС Love) — no source found this run",
-  "STILL DEAD: ТНТ4 (480p) (ТНТ4) — no source found this run",
-  "STILL DEAD: Точка ТВ (Точка ТВ) — no source found this run",
-  "REMOVE : RU TV — no working source (URLError)",
-  "REMOVE : Мульт — no working source (URLError)",
-  "REMOVE : Россия-К — no working source (URLError)",
-  "REMOVE : Русский Бестселлер — no working source (URLError)",
-  "REMOVE : СТС Love — no working source (URLError)",
-  "REMOVE : ТНТ4 (480p) — no working source (URLError)",
-  "REMOVE : Точка ТВ — no working source (URLError)"
+  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)"
  ]
 }
