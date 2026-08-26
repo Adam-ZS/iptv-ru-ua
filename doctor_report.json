@@ -1,13 +1,8 @@
 {
- "summary": "doctor run 2026-08-26 09:57 — 41/43 channels kept (removed 2)",
+ "summary": "doctor run 2026-08-26 16:34 — 41/41 channels kept (removed 0)",
  "report": [
-  "SWAP   : Россия 1 HD  ->  https://live.smotrim.ru/vgtrk/0/russia1-hd/index.m3u8",
-  "LEAVE  : Самара 24 (URLError) — no slot (yt/unsupported)",
   "LEAVE  : Inter (unsupported/skip) — no slot (yt/unsupported)",
   "LEAVE  : FREEDOM (unsupported/skip) — no slot (yt/unsupported)",
-  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)",
-  "STILL DEAD: Russia 24 (Россия 24) — no source found this run",
-  "REMOVE : Russia 24 — no working source (URLError)",
-  "REMOVE : Самара 24 — no working source (URLError)"
+  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)"
  ]
 }
