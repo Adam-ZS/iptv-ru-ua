@@ -4,7 +4,7 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8
 #EXTINF:-1 tvg-name="ORT",ORT
 https://cdn.ntv.ru/vitrina18/index.m3u8
 #EXTINF:-1 tvg-id="ChannelOne.ru@SD" tvg-name="Первый канал" tvg-logo="https://i.imgur.com/RUSX0rX.png",Первый канал
-https://streaming.televizor-24-tochka.ru/live/210.m3u8
+https://cdn.ntv.ru/vitrina18/index.m3u8
 #EXTINF:-1 tvg-id="ChannelOne.ru@SD" tvg-name="Первый канал (офиц)" tvg-logo="https://i.imgur.com/RUSX0rX.png",Первый канал (офиц)
 https://cdn.ntv.ru/vitrina18/index.m3u8
 #EXTINF:-1 tvg-id="360.ru@SD" tvg-name="360°" tvg-logo="https://i.imgur.com/VTJqdoX.png",360°
