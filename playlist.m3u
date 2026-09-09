@@ -2,15 +2,15 @@
 #EXTINF:-1 tvg-name="5 канал",5 канал
 https://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8
 #EXTINF:-1 tvg-name="ORT",ORT
-https://cdn.ntv.ru/vitrina18/index.m3u8
+https://streaming.televizor-24-tochka.ru/live/210.m3u8
 #EXTINF:-1 tvg-id="ChannelOne.ru@SD" tvg-name="Первый канал" tvg-logo="https://i.imgur.com/RUSX0rX.png",Первый канал
-https://cdn.ntv.ru/vitrina18/index.m3u8
+https://streaming.televizor-24-tochka.ru/live/210.m3u8
 #EXTINF:-1 tvg-id="ChannelOne.ru@SD" tvg-name="Первый канал (офиц)" tvg-logo="https://i.imgur.com/RUSX0rX.png",Первый канал (офиц)
-https://cdn.ntv.ru/vitrina18/index.m3u8
+https://streaming.televizor-24-tochka.ru/live/210.m3u8
 #EXTINF:-1 tvg-id="360.ru@SD" tvg-name="360°" tvg-logo="https://i.imgur.com/VTJqdoX.png",360°
 https://live-vgtrksmotrim.cdnvideo.ru/vgtrksmotrim/smotrim-live-04-srt.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Первый",Первый
-https://cdn.ntv.ru/vitrina18/index.m3u8
+https://streaming.televizor-24-tochka.ru/live/210.m3u8
 #EXTINF:-1 tvg-name="RTД",RTД
 https://rt-doc.rttv.com/dvr/rtdru/playlist.m3u8
 #EXTINF:-1 tvg-id="ShoppingLive.ru@SD" tvg-name="Shopping Live (576p)" tvg-logo="https://i.imgur.com/EMmGnjV.png",Shopping Live (576p)
@@ -30,15 +30,15 @@ https://live-tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8
 #EXTINF:-1 tvg-id="NikaTV.ru@SD" tvg-name="Ника ТВ (576p)" tvg-logo="https://i.imgur.com/dccsFAu.png",Ника ТВ (576p)
 https://live-nikatv.cdnvideo.ru/nikatv/nikatv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-name="НТВ",НТВ
-https://cdn.ntv.ru/ntv0_hd/index.m3u8
+http://hls127.freeott.top:8080/NTV_PRAVO_TV/video.m3u8
 #EXTINF:-1 tvg-name="НТВ (офиц)",НТВ (офиц)
-https://cdn.ntv.ru/ntv0_hd/index.m3u8
+http://hls127.freeott.top:8080/NTV_PRAVO_TV/video.m3u8
 #EXTINF:-1 tvg-name="НТВ Мир",НТВ Мир
 https://streaming.televizor-24-tochka.ru/live/213.m3u8
 #EXTINF:-1 tvg-name="НТВ Мир (офиц)",НТВ Мир (офиц)
-https://cdn.ntv.ru/vitrina3/index.m3u8
+https://streaming.televizor-24-tochka.ru/live/213.m3u8
 #EXTINF:-1 tvg-name="НТВ Mir",НТВ Mir
-https://cdn.ntv.ru/ntv0_hd/index.m3u8
+http://hls127.freeott.top:8080/NTV_PRAVO_TV/video.m3u8
 #EXTINF:-1 tvg-id="YaPervyy.ru@HD" tvg-name="Первый Ярославский" tvg-logo="https://yarreg.ru/gallery/news/2025/03/293241/3.jpeg",Первый Ярославский
 https://yaroslavl.mediacdn.ru/cdn/pervyaroslavsk/playlist.m3u8
 #EXTINF:-1 tvg-id="Russia1.ru@SD" tvg-name="Россия 1" tvg-logo="https://i.imgur.com/Osd2JHL.png",Россия 1
