@@ -15,8 +15,6 @@ https://streaming.televizor-24-tochka.ru/live/210.m3u8
 https://rt-doc.rttv.com/dvr/rtdru/playlist.m3u8
 #EXTINF:-1 tvg-id="ShoppingLive.ru@SD" tvg-name="Shopping Live (576p)" tvg-logo="https://i.imgur.com/EMmGnjV.png",Shopping Live (576p)
 http://serv30.vintera.tv:8081/shoppinglive/shoppinglive_stream/playlist.m3u8
-#EXTINF:-1 tvg-id="Aris24.ru@SD" tvg-name="Арис 24 (720p)" tvg-logo="https://i.imgur.com/CTFVEAb.png",Арис 24 (720p)
-http://serv25.vintera.tv:8081/test/aris/playlist.m3u8
 #EXTINF:-1 tvg-id="Mir24.ru@SD" tvg-name="Мир 24 (1080p)" tvg-logo="https://i.imgur.com/dj9c8Yd.png",Мир 24 (1080p)
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8
 #EXTINF:-1 tvg-id="Mir.ru@Plus4" tvg-name="Мир (1080p)" tvg-logo="https://i.imgur.com/AqWaJT8.png",Мир (1080p)
