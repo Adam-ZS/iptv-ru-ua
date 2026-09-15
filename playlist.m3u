@@ -18,7 +18,7 @@ http://serv30.vintera.tv:8081/shoppinglive/shoppinglive_stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Mir24.ru@SD" tvg-name="Мир 24 (1080p)" tvg-logo="https://i.imgur.com/dj9c8Yd.png",Мир 24 (1080p)
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8
 #EXTINF:-1 tvg-id="Mir.ru@Plus4" tvg-name="Мир (1080p)" tvg-logo="https://i.imgur.com/AqWaJT8.png",Мир (1080p)
-http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8
+http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8
 #EXTINF:-1 tvg-id="MTVVolgograd.ru@SD" tvg-name="МТВ (Волгоград) (720p)" tvg-logo="https://i.imgur.com/pdCAUrP.png",МТВ (Волгоград) (720p)
 http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="MuzSoyuz.ru@SD" tvg-name="Муз союз (576p)" tvg-logo="https://i.imgur.com/Puk1Bhx.png",Муз союз (576p)

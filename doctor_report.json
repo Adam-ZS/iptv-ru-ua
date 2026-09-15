@@ -1,8 +1,9 @@
 {
- "summary": "doctor run 2026-09-15 18:59 — 40/40 channels kept (removed 0)",
+ "summary": "doctor run 2026-09-15 23:31 — 40/40 channels kept (removed 0)",
  "report": [
   "LEAVE  : Inter (unsupported/skip) — no slot (yt/unsupported)",
   "LEAVE  : FREEDOM (unsupported/skip) — no slot (yt/unsupported)",
-  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)"
+  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)",
+  "RUNTIME: Мир (1080p)  ->  http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8"
  ]
 }
