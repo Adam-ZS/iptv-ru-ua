@@ -1,8 +1,9 @@
 {
- "summary": "doctor run 2026-09-19 13:09 — 40/40 channels kept (removed 0)",
+ "summary": "doctor run 2026-09-19 18:00 — 39/40 channels kept (removed 1)",
  "report": [
   "LEAVE  : Inter (unsupported/skip) — no slot (yt/unsupported)",
   "LEAVE  : FREEDOM (unsupported/skip) — no slot (yt/unsupported)",
-  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)"
+  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)",
+  "REMOVE : Первый — no working source (TimeoutError)"
  ]
 }
