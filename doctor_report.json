@@ -1,10 +1,8 @@
 {
- "summary": "doctor run 2026-09-24 08:27 — 38/39 channels kept (removed 1)",
+ "summary": "doctor run 2026-09-24 14:12 — 38/38 channels kept (removed 0)",
  "report": [
   "LEAVE  : Inter (unsupported/skip) — no slot (yt/unsupported)",
   "LEAVE  : FREEDOM (unsupported/skip) — no slot (yt/unsupported)",
-  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)",
-  "STILL DEAD: RTД (RTД) — no source found this run",
-  "REMOVE : RTД — no working source (URLError)"
+  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)"
  ]
 }
