@@ -63,10 +63,6 @@ http://s18209.cdn.ngenix.net/hls/CH_R01_TNT/playlist.m3u8
 https://3abn.bozztv.com/3abn2/Rus_live/smil:Rus_live.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="НТН (576p)",НТН (576p)
 https://cdn15.live-tv.cloud/ua_infinitas_tv/ntn-abr/playlist.m3u8
-#EXTINF:-1 tvg-name="1+1 Maraphon",1+1 Maraphon
-https://dash2.antik.sk/live/1plus1_marathon/playlist.m3u8
-#EXTINF:-1 tvg-name="1+1",1+1
-https://dash2.antik.sk/live/1plus1_marathon/playlist.m3u8
 #EXTINF:-1 tvg-name="Inter",Inter
 https://www.youtube.com/watch?v=emvZnAd4Qcw
 #EXTINF:-1 tvg-id="FREEDOM.ua@SD" tvg-name="FREEDOM" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/FreeDOMUAlogo.svg/960px-FreeDOMUAlogo.svg.png",FREEDOM

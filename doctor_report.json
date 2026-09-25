@@ -1,8 +1,12 @@
 {
- "summary": "doctor run 2026-09-25 08:48 — 38/38 channels kept (removed 0)",
+ "summary": "doctor run 2026-09-25 14:36 — 36/38 channels kept (removed 2)",
  "report": [
   "LEAVE  : Inter (unsupported/skip) — no slot (yt/unsupported)",
   "LEAVE  : FREEDOM (unsupported/skip) — no slot (yt/unsupported)",
-  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)"
+  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)",
+  "STILL DEAD: 1+1 Maraphon (1+1 Maraphon) — no source found this run",
+  "STILL DEAD: 1+1 (1+1) — no source found this run",
+  "REMOVE : 1+1 Maraphon — no working source (HTTPError)",
+  "REMOVE : 1+1 — no working source (HTTPError)"
  ]
 }
