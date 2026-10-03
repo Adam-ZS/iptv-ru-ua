@@ -1,8 +1,10 @@
 {
- "summary": "doctor run 2026-10-03 14:19 — 36/36 channels kept (removed 0)",
+ "summary": "doctor run 2026-10-03 18:41 — 35/36 channels kept (removed 1)",
  "report": [
+  "LEAVE  : Муз союз (576p) (HTTPError) — no slot (yt/unsupported)",
   "LEAVE  : Inter (unsupported/skip) — no slot (yt/unsupported)",
   "LEAVE  : FREEDOM (unsupported/skip) — no slot (yt/unsupported)",
-  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)"
+  "LEAVE  : MOSCOW (unsupported/skip) — no slot (yt/unsupported)",
+  "REMOVE : Муз союз (576p) — no working source (HTTPError)"
  ]
 }
